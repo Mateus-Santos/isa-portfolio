@@ -1,0 +1,137 @@
+/* Isadora Portfolio AT V3: três paletas, sem alteração na estrutura original. */
+/* Padrão: azul serenity. */
+:root, :root[data-theme="serenity"] {
+  --forest: #294D70;
+  --forest-2: #376B91;
+  --sage: #86B8D8;
+  --sage-light: #DFEFF9;
+  --coral: #287EAE;
+  --coral-dark: #17648D;
+  --cream: #F3F9FD;
+  --cream-2: #E6F0F8;
+  --paper: #FFFFFF;
+  --ink: #203348;
+  --ink-soft: #4B6175;
+  --line: rgba(38,78,113,.15);
+  --shadow: 0 20px 40px -20px rgba(40,85,120,.28);
+  --header-bg: rgba(243,249,253,.97);
+  --panel-bg: #294D70;
+  --panel-muted: #DFEFF9;
+  --option-hover: #E6F0F8;
+  color-scheme: light;
+}
+
+/* Terceira opção: mantém exatamente as cores de referência da V2. */
+:root[data-theme="original"] {
+  --forest: #2F4438;
+  --forest-2: #3E5C4A;
+  --sage: #8FAE87;
+  --sage-light: #D7E4CD;
+  --coral: #E2946F;
+  --coral-dark: #C97650;
+  --cream: #F6F1E6;
+  --cream-2: #EDE6D4;
+  --paper: #FBF8F1;
+  --ink: #2B2620;
+  --ink-soft: #5B5548;
+  --line: rgba(43,38,32,.12);
+  --shadow: 0 20px 40px -20px rgba(47,68,56,.35);
+  --header-bg: rgba(246,241,230,.96);
+  --panel-bg: #2F4438;
+  --panel-muted: #D7E4CD;
+  --option-hover: #EDE6D4;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --forest: #B4D4F0;
+  --forest-2: #9BC6E8;
+  --sage: #638BAE;
+  --sage-light: #D8E8F8;
+  --coral: #8FB9E0;
+  --coral-dark: #A9D2F0;
+  --cream: #0F1825;
+  --cream-2: #25364B;
+  --paper: #192638;
+  --ink: #F0F5FA;
+  --ink-soft: #C3D0DD;
+  --line: rgba(200,222,241,.17);
+  --shadow: 0 20px 40px -20px rgba(0,0,0,.7);
+  --header-bg: rgba(15,24,37,.98);
+  --panel-bg: #23435F;
+  --panel-muted: #D9EAFB;
+  --option-hover: #25364B;
+  color-scheme: dark;
+}
+
+.site-header { background: var(--header-bg); }
+.formacao-card, .contato-card { background: var(--panel-bg); }
+.formacao-card p, .contato-copy p, .contato-link small { color: var(--panel-muted); }
+/* Ajusta as superfícies e destaques que usam cores fixas na folha de estilos anterior. */
+:root[data-theme="dark"] .logo-mark,
+:root[data-theme="dark"] .nav-cta,
+:root[data-theme="dark"] .tab-btn.is-active { background:#294D70; color:#fff!important; border-color:#294D70; }
+:root[data-theme="dark"] .nav-cta:hover { background:#376B91; }
+:root[data-theme="dark"] .btn-primary { color: #112436; }
+:root[data-theme="dark"] .btn-ghost:hover { color: #112436; }
+:root[data-theme="dark"] .tag { background:#2A4056; color:#E4F0FF; }
+:root[data-theme="dark"] .tag--soft { background:#293447; color:#DFE9F4; }
+:root[data-theme="dark"] .photo-tag { color:#EAF3FB; }
+:root[data-theme="dark"] .btn-light { color:#EAF4FF; background:#294D70; border-color:#B4D4F0; }
+:root[data-theme="dark"] .btn-light:hover { background:#376B91; }
+:root[data-theme="dark"] .extra-courses summary,
+:root[data-theme="dark"] .extra-courses-grid strong { color:#D5E8F8; }
+:root[data-theme="dark"] .scroll-cue, :root[data-theme="dark"] .scroll-cue span { color:var(--ink-soft); }
+
+/* Seletor de cores no cabeçalho. */
+.nav-actions { order:2; display:flex; align-items:center; gap:10px; margin-left:10px; flex-shrink:0; }
+.nav-links { order:1; margin-left:auto; }
+.theme-picker { position:relative; z-index:1400; }
+.theme-toggle {
+  display:flex; align-items:center; justify-content:center; gap:7px;
+  min-width:44px; min-height:44px; border:1px solid var(--line);
+  border-radius:999px; background:var(--paper); color:var(--forest);
+  font-family:var(--f-body);font-size:.86rem;font-weight:600;
+  padding:8px 13px; cursor:pointer;
+  box-shadow:0 3px 12px -10px rgba(0,0,0,.45);
+}
+.theme-toggle:hover, .theme-toggle[aria-expanded="true"] { background:var(--cream-2); border-color:var(--sage); }
+.theme-toggle svg { flex:none; width:19px;height:19px; }
+.theme-options {
+  position:absolute; top:calc(100% + 12px); right:0;
+  width:max-content; min-width:224px; padding:8px;
+  border:1px solid var(--line); border-radius:15px;
+  background:var(--paper); color:var(--ink);
+  box-shadow:0 16px 32px -14px rgba(22,45,64,.3);
+  z-index:1300;
+}
+.theme-options[hidden] { display:none!important; }
+.theme-option {
+  display:flex;align-items:center;gap:11px;width:100%;
+  padding:12px 13px;border:0;border-radius:10px;
+  text-align:left;font:600 .88rem var(--f-body);
+  cursor:pointer;background:transparent;color:var(--ink);
+}
+.theme-option:hover,.theme-option:focus-visible { background:var(--option-hover); }
+.theme-option[aria-pressed="true"] { background:var(--cream-2);color:var(--forest); }
+.theme-option[aria-pressed="true"]::after { content:"✓";margin-left:auto;font-weight:700; }
+.theme-swatch { width:20px;height:20px;border-radius:50%;border:1px solid rgba(0,0,0,.12);flex:none; }
+.theme-swatch--serenity { background:linear-gradient(135deg,#86B8D8 50%,#294D70 50%); }
+.theme-swatch--dark { background:linear-gradient(135deg,#0F1825 50%,#8FB9E0 50%); }
+.theme-swatch--original { background:linear-gradient(135deg,#8FAE87 50%,#2F4438 50%); }
+.nav-toggle { margin:0; }
+@media (max-width:1190px){
+  .theme-toggle-label{display:none;}
+  .theme-toggle{padding:8px;width:44px;height:44px;}
+}
+@media (max-width:1080px){
+  .nav-actions{margin-left:auto;order:1;}
+  .nav-links {order:2;margin-left:0;}
+  .theme-options { right:0; }
+}
+@media (max-width:440px){
+  .nav-actions {gap:5px;}
+  .theme-toggle {width:42px;height:42px;min-width:42px;min-height:42px;}
+  .theme-options {min-width:205px;}
+  .logo-text {font-size:.95rem;}
+}

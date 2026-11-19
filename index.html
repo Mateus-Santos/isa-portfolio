@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Isadora Olimpio | Assistente Terapêutica e Acompanhante Escolar</title>
 <meta name="description" content="Isadora Olimpio: Assistente Terapêutica e Acompanhante Escolar em Feira de Santana. Estudante do 3º semestre de Terapia Ocupacional, com experiência em contextos clínico e escolar.">
-<meta name="theme-color" content="#2F4438">
-<meta name="portfolio-revision" content="at-v2">
+<meta name="theme-color" content="#294D70">
+<script src="js/themes.js"></script>
+<meta name="portfolio-revision" content="at-v3">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Isadora Olimpio | Assistente Terapêutica e Acompanhante Escolar">
 <meta property="og:description" content="Acompanhamento infantil, apoio escolar e experiência clínica em Feira de Santana, BA.">
@@ -17,6 +18,7 @@
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/portfolio-at-v2.css">
+<link rel="stylesheet" href="css/themes.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
 </head>
 <body>
@@ -35,9 +37,22 @@
       <span class="logo-mark" aria-hidden="true">IO</span>
       <span class="logo-text">Isadora Olimpio</span>
     </a>
-    <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
-      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-    </button>
+    <div class="nav-actions">
+      <div class="theme-picker" id="themePicker">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-controls="themeOptions" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar tema de cores">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 22a10 10 0 1 1 10-10c0 2.2-1.8 4-4 4h-2.2a2.1 2.1 0 0 0-1.5 3.6A2 2 0 0 1 12 22Z"/></svg>
+          <span class="theme-toggle-label">Cores</span>
+        </button>
+        <div class="theme-options" id="themeOptions" role="group" aria-label="Escolha a paleta de cores" hidden>
+          <button class="theme-option" type="button" data-theme-choice="serenity" aria-pressed="true"><span class="theme-swatch theme-swatch--serenity" aria-hidden="true"></span>Azul serenity</button>
+          <button class="theme-option" type="button" data-theme-choice="dark" aria-pressed="false"><span class="theme-swatch theme-swatch--dark" aria-hidden="true"></span>Escuro</button>
+          <button class="theme-option" type="button" data-theme-choice="original" aria-pressed="false"><span class="theme-swatch theme-swatch--original" aria-hidden="true"></span>Verde original</button>
+        </div>
+      </div>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#inicio" data-link>Início</a></li>
       <li><a href="#sobre" data-link>Sobre</a></li>
@@ -90,12 +105,12 @@
       </div>
       <div class="sobre-content reveal" style="--delay:.1s">
         <p>Sou estudante de Terapia Ocupacional, com experiência como Assistente Terapêutica de Sala, Assistente Pedagógica e Auxiliar Pedagógica. Já acompanhei crianças neurodivergentes e crianças com transtornos de aprendizagem, oferecendo suporte à rotina, interação e participação.</p>
-        <p>Na clínica, apoiei atividades realizadas por profissionais de psicologia e psicopedagogia, com utilização de princípios da Análise do Comportamento Aplicada (ABA). Na escola, participei do acompanhamento individual, da adaptação à rotina e do apoio inicial ao manejo comportamental.</p>
+        <p>Na clínica, apoiei atividades de profissionais de psicologia, terapia ocupacional e fonoaudiologia, utilizando princípios da Análise do Comportamento Aplicada (ABA). Na escola, participei do acompanhamento individual, da adaptação à rotina e do apoio inicial ao manejo comportamental.</p>
         <p class="role-note">Minha atuação é como assistente/acompanhante, dentro das atribuições da função e das orientações da equipe responsável. Estou em formação acadêmica; ainda não sou terapeuta ocupacional formada.</p>
         <div class="sobre-pillars">
           <div class="pillar"><span class="pillar-icon" aria-hidden="true">🧩</span><h3>Inclusão</h3><p>Apoio à participação da criança em atividades escolares e clínicas.</p></div>
           <div class="pillar"><span class="pillar-icon" aria-hidden="true">🌱</span><h3>Rotina</h3><p>Suporte à adaptação, interação e acompanhamento individual.</p></div>
-          <div class="pillar"><span class="pillar-icon" aria-hidden="true">🤝</span><h3>Equipe</h3><p>Colaboração com profissionais de psicologia e psicopedagogia.</p></div>
+          <div class="pillar"><span class="pillar-icon" aria-hidden="true">🤝</span><h3>Equipe</h3><p>Colaboração com profissionais de psicologia, terapia ocupacional e fonoaudiologia.</p></div>
         </div>
       </div>
     </div>
@@ -121,7 +136,7 @@
               <span class="path-year">jul/2026 – out/2026</span>
               <h3>Assistente Terapêutica de Sala</h3>
               <p class="path-place">Clínica Neuroinfância</p>
-              <p>Acompanhamento infantil em clínica com base em princípios da ABA; apoio às atividades de psicologia e psicopedagogia; suporte à participação da criança durante as atividades e a rotina de acompanhamento.</p>
+              <p>Acompanhamento infantil em clínica com base em princípios da ABA; apoio às atividades de psicologia, terapia ocupacional e fonoaudiologia; suporte à participação da criança durante as atividades e a rotina de acompanhamento.</p>
             </div>
           </li>
           <li class="path-step reveal" style="--delay:.06s">
@@ -235,7 +250,7 @@
           <div class="tag-cloud">
             <span class="tag">Princípios da ABA</span>
             <span class="tag">Apoio inicial ao manejo comportamental</span>
-            <span class="tag">Apoio a atividades de psicologia e psicopedagogia</span>
+            <span class="tag">Apoio a atividades de psicologia, terapia ocupacional e fonoaudiologia</span>
             <span class="tag">Atuação com equipe multiprofissional</span>
             <span class="tag">Manejo de crises (curso complementar)</span>
           </div>
