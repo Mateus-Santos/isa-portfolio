@@ -1,28 +1,6 @@
-/* Isadora Portfolio AT V3: três paletas, sem alteração na estrutura original. */
-/* Padrão: azul serenity. */
-:root, :root[data-theme="serenity"] {
-  --forest: #294D70;
-  --forest-2: #376B91;
-  --sage: #86B8D8;
-  --sage-light: #DFEFF9;
-  --coral: #287EAE;
-  --coral-dark: #17648D;
-  --cream: #F3F9FD;
-  --cream-2: #E6F0F8;
-  --paper: #FFFFFF;
-  --ink: #203348;
-  --ink-soft: #4B6175;
-  --line: rgba(38,78,113,.15);
-  --shadow: 0 20px 40px -20px rgba(40,85,120,.28);
-  --header-bg: rgba(243,249,253,.97);
-  --panel-bg: #294D70;
-  --panel-muted: #DFEFF9;
-  --option-hover: #E6F0F8;
-  color-scheme: light;
-}
-
-/* Terceira opção: mantém exatamente as cores de referência da V2. */
-:root[data-theme="original"] {
+/* Isadora Portfolio AT V4: verde original como principal, escuro e serenity secundarios. */
+/* Verde original agora e o padrao visual. */
+:root, :root[data-theme="original"] {
   --forest: #2F4438;
   --forest-2: #3E5C4A;
   --sage: #8FAE87;
@@ -40,6 +18,28 @@
   --panel-bg: #2F4438;
   --panel-muted: #D7E4CD;
   --option-hover: #EDE6D4;
+  color-scheme: light;
+}
+
+/* Azul serenity: alternativa secundaria, ultima na lista. */
+:root[data-theme="serenity"] {
+  --forest: #294D70;
+  --forest-2: #376B91;
+  --sage: #86B8D8;
+  --sage-light: #DFEFF9;
+  --coral: #287EAE;
+  --coral-dark: #17648D;
+  --cream: #F3F9FD;
+  --cream-2: #E6F0F8;
+  --paper: #FFFFFF;
+  --ink: #203348;
+  --ink-soft: #4B6175;
+  --line: rgba(38,78,113,.15);
+  --shadow: 0 20px 40px -20px rgba(40,85,120,.28);
+  --header-bg: rgba(243,249,253,.97);
+  --panel-bg: #294D70;
+  --panel-muted: #DFEFF9;
+  --option-hover: #E6F0F8;
   color-scheme: light;
 }
 

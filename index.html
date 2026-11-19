@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Isadora Olimpio | Assistente Terapêutica e Acompanhante Escolar</title>
 <meta name="description" content="Isadora Olimpio: Assistente Terapêutica e Acompanhante Escolar em Feira de Santana. Estudante do 3º semestre de Terapia Ocupacional, com experiência em contextos clínico e escolar.">
-<meta name="theme-color" content="#294D70">
+<meta name="theme-color" content="#2F4438">
 <script src="js/themes.js"></script>
-<meta name="portfolio-revision" content="at-v3">
+<meta name="portfolio-revision" content="at-v4">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Isadora Olimpio | Assistente Terapêutica e Acompanhante Escolar">
 <meta property="og:description" content="Acompanhamento infantil, apoio escolar e experiência clínica em Feira de Santana, BA.">
@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/portfolio-at-v2.css">
 <link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/portfolio-at-v4.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
 </head>
 <body>
@@ -44,9 +45,9 @@
           <span class="theme-toggle-label">Cores</span>
         </button>
         <div class="theme-options" id="themeOptions" role="group" aria-label="Escolha a paleta de cores" hidden>
-          <button class="theme-option" type="button" data-theme-choice="serenity" aria-pressed="true"><span class="theme-swatch theme-swatch--serenity" aria-hidden="true"></span>Azul serenity</button>
+          <button class="theme-option" type="button" data-theme-choice="original" aria-pressed="true"><span class="theme-swatch theme-swatch--original" aria-hidden="true"></span>Verde original</button>
           <button class="theme-option" type="button" data-theme-choice="dark" aria-pressed="false"><span class="theme-swatch theme-swatch--dark" aria-hidden="true"></span>Escuro</button>
-          <button class="theme-option" type="button" data-theme-choice="original" aria-pressed="false"><span class="theme-swatch theme-swatch--original" aria-hidden="true"></span>Verde original</button>
+          <button class="theme-option" type="button" data-theme-choice="serenity" aria-pressed="false"><span class="theme-swatch theme-swatch--serenity" aria-hidden="true"></span>Azul serenity</button>
         </div>
       </div>
       <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
@@ -57,6 +58,7 @@
       <li><a href="#inicio" data-link>Início</a></li>
       <li><a href="#sobre" data-link>Sobre</a></li>
       <li><a href="#experiencia" data-link>Experiência</a></li>
+      <li><a href="#galeria" data-link>Galeria</a></li>
       <li><a href="#formacao" data-link>Formação</a></li>
       <li><a href="#cursos" data-link>Cursos</a></li>
       <li><a href="#habilidades" data-link>Competências</a></li>
@@ -182,6 +184,59 @@
     </div>
   </section>
 
+
+<!-- GALERIA PROFISSIONAL -->
+<section id="galeria" class="section io-gallery" aria-labelledby="galeriaTitle">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Galeria de atividades</p>
+      <h2 id="galeriaTitle">Um pouco dos ambientes e recursos do meu trabalho.</h2>
+      <p class="section-intro">Registros do ambiente clínico, de materiais lúdicos e de experiências de acompanhamento infantil.</p>
+    </div>
+    <div class="io-gallery-card reveal">
+      <div class="io-gallery-toolbar">
+        <span id="galleryCounter" class="io-gallery-counter" aria-live="polite">1 de 5</span>
+        <div class="io-gallery-controls">
+          <button type="button" id="galleryPrev" aria-label="Foto anterior" title="Foto anterior">&#8592;</button>
+          <button type="button" id="galleryNext" aria-label="Próxima foto" title="Próxima foto">&#8594;</button>
+        </div>
+      </div>
+      <div id="galleryViewport" class="io-gallery-viewport" role="region" aria-roledescription="carrossel" aria-label="Imagens do trabalho de Isadora" tabindex="0">
+        <div class="io-gallery-track" id="galleryTrack">
+          <figure class="io-gallery-slide" data-gallery-slide>
+            <div class="io-gallery-media"><img src="assets/galeria/espaco-terapeutico.jpg" alt="Sala com tatames, recursos táteis, brinquedos e mobiliário de apoio." loading="lazy" decoding="async"></div>
+            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 01</span><h3>Espaço e materiais</h3><p>Sala com tatames e recursos lúdicos e sensoriais, preparada para atividades de acompanhamento.</p></figcaption>
+          </figure>
+          <figure class="io-gallery-slide" data-gallery-slide>
+            <div class="io-gallery-media"><img src="assets/galeria/atividade-encaixe.jpg" alt="Mesa redonda com encaixes coloridos e peças espalhadas." loading="lazy" decoding="async"></div>
+            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 02</span><h3>Atividades de encaixe</h3><p>Materiais de encaixe, organização de cores e coordenação usados em atividades lúdicas.</p></figcaption>
+          </figure>
+          <figure class="io-gallery-slide" data-gallery-slide>
+            <div class="io-gallery-media"><img src="assets/galeria/piscina-bolinhas-1.jpg" alt="Isadora sentada em piscina de bolinhas, segurando bolas verde e rosa." loading="lazy" decoding="async"></div>
+            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 03</span><h3>Brincadeiras e interação</h3><p>Registro de Isadora em ambiente lúdico com piscina de bolinhas e materiais coloridos.</p></figcaption>
+          </figure>
+          <figure class="io-gallery-slide" data-gallery-slide>
+            <div class="io-gallery-media"><img src="assets/galeria/piscina-bolinhas-2.jpg" alt="Isadora sorrindo entre bolas coloridas em piscina de bolinhas." loading="lazy" decoding="async"></div>
+            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 04</span><h3>Exploração e movimento</h3><p>Outro momento no espaço lúdico, com uso de bolas e oportunidades de movimento e participação.</p></figcaption>
+          </figure>
+          <figure class="io-gallery-slide" data-gallery-slide>
+            <div class="io-gallery-media"><img src="assets/galeria/acompanhamento-clinico.jpg" alt="Isadora em ambiente clínico, usando jaleco e sentada próxima a brinquedos." loading="lazy" decoding="async"></div>
+            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 05</span><h3>Contexto profissional</h3><p>Fotografia de Isadora no ambiente de atendimento, ilustrando sua experiência de apoio em clínica.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="io-gallery-thumbs" id="galleryThumbs" role="group" aria-label="Escolher uma imagem">
+        <button class="io-gallery-thumb is-active" type="button" data-gallery-thumb="0" aria-label="Mostrar imagem 1: Espaço e materiais" aria-pressed="true"><img src="assets/galeria/espaco-terapeutico.jpg" alt="" loading="lazy"><span>Espaço e materiais</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="1" aria-label="Mostrar imagem 2: Atividades de encaixe" aria-pressed="false"><img src="assets/galeria/atividade-encaixe.jpg" alt="" loading="lazy"><span>Atividades de encaixe</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="2" aria-label="Mostrar imagem 3: Brincadeiras e interação" aria-pressed="false"><img src="assets/galeria/piscina-bolinhas-1.jpg" alt="" loading="lazy"><span>Brincadeiras e interação</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="3" aria-label="Mostrar imagem 4: Exploração e movimento" aria-pressed="false"><img src="assets/galeria/piscina-bolinhas-2.jpg" alt="" loading="lazy"><span>Exploração e movimento</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="4" aria-label="Mostrar imagem 5: Contexto profissional" aria-pressed="false"><img src="assets/galeria/acompanhamento-clinico.jpg" alt="" loading="lazy"><span>Contexto profissional</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- FORMAÇÃO -->
   <section id="formacao" class="section formacao" aria-labelledby="formacaoTitle">
     <div class="container section-grid">
@@ -304,6 +359,7 @@
 </footer>
 
 <noscript><style>.tab-panel{display:block!important}.tabs{display:none!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<script src="js/gallery.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

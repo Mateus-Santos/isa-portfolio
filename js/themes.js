@@ -1,17 +1,17 @@
-// Isadora Portfolio AT V3: tema padrão azul serenity, alternativas escuro/original.
+// Isadora Portfolio AT V4: verde original como padrão, escuro e serenity opcionais.
 // Executar no <head> evita flash da paleta incorreta antes da pintura da página.
 (() => {
   'use strict';
-  const STORAGE_KEY = 'isa-portfolio-theme';
+  const STORAGE_KEY = 'isa-portfolio-theme-v4';
   const THEMES = Object.freeze({
-    serenity: { label: 'Azul serenity', bar: '#294D70' },
+    original: { label: 'Verde original', bar: '#2F4438' },
     dark: { label: 'Escuro', bar: '#0F1825' },
-    original: { label: 'Verde original', bar: '#2F4438' }
+    serenity: { label: 'Azul serenity', bar: '#294D70' }
   });
   const root = document.documentElement;
   let saved = null;
   try { saved = window.localStorage.getItem(STORAGE_KEY); } catch (_) { /* armazenamento bloqueado */ }
-  let selected = Object.prototype.hasOwnProperty.call(THEMES, saved) ? saved : 'serenity';
+  let selected = Object.prototype.hasOwnProperty.call(THEMES, saved) ? saved : 'original';
   root.dataset.theme = selected;
   const updateThemeColor = () => {
     const meta = document.querySelector('meta[name="theme-color"]');
