@@ -7,7 +7,7 @@
 <meta name="description" content="Isadora Olimpio: Assistente Terapêutica e Acompanhante Escolar em Feira de Santana. Estudante do 3º semestre de Terapia Ocupacional, com experiência em contextos clínico e escolar.">
 <meta name="theme-color" content="#2F4438">
 <script src="js/themes.js"></script>
-<meta name="portfolio-revision" content="at-v6">
+<meta name="portfolio-revision" content="at-v7">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Isadora Olimpio | Assistente Terapêutica e Acompanhante Escolar">
 <meta property="og:description" content="Acompanhamento infantil, apoio escolar e experiência clínica em Feira de Santana, BA.">
@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="css/themes.css">
 <link rel="stylesheet" href="css/portfolio-at-v4.css">
 <link rel="stylesheet" href="css/portfolio-gallery-v6.css">
+<link rel="stylesheet" href="css/portfolio-gallery-v7.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
 </head>
 <body>
@@ -197,10 +198,23 @@
     <div class="io-gallery-card reveal">
       <div class="io-gallery-toolbar">
         <span id="galleryCounter" class="io-gallery-counter" aria-live="off">1 de 7</span>
-        <div class="io-gallery-controls">
-          <button type="button" id="galleryAutoToggle" class="io-gallery-autoplay" aria-label="Pausar reprodução automática" aria-pressed="true" title="Pausar ou reproduzir o carrossel"><span class="io-gallery-play-icon" aria-hidden="true">❚❚</span><span class="io-gallery-play-label">Pausar</span></button>
-          <button type="button" id="galleryPrev" aria-label="Foto anterior" title="Foto anterior">&#8592;</button>
-          <button type="button" id="galleryNext" aria-label="Próxima foto" title="Próxima foto">&#8594;</button>
+        <div class="io-gallery-controls" role="group" aria-label="Controles do carrossel">
+          <button type="button" id="galleryPrev" class="io-gallery-nav" aria-label="Foto anterior" title="Foto anterior">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button type="button" id="galleryAutoToggle" class="io-gallery-autoplay" aria-label="Pausar reprodução automática" aria-pressed="true" title="Pausar reprodução automática">
+            <svg class="io-gallery-progress-ring" aria-hidden="true" viewBox="0 0 48 48">
+              <circle class="io-gallery-ring-track" cx="24" cy="24" r="21"/>
+              <circle id="galleryProgressCircle" class="io-gallery-ring-fill" cx="24" cy="24" r="21"/>
+            </svg>
+            <svg class="io-gallery-glyph" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path class="io-gallery-glyph-pause" d="M9 7v10M15 7v10"/>
+              <path class="io-gallery-glyph-play" d="m9 6 10 6-10 6z" fill="currentColor" stroke="none"/>
+            </svg>
+          </button>
+          <button type="button" id="galleryNext" class="io-gallery-nav" aria-label="Próxima foto" title="Próxima foto">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
         </div>
       </div>
       <div id="galleryViewport" class="io-gallery-viewport" role="region" aria-roledescription="carrossel" aria-label="Imagens do trabalho de Isadora" tabindex="0">
