@@ -7,7 +7,7 @@
 <meta name="description" content="Isadora Olimpio: Assistente Terapêutica e Acompanhante Escolar em Feira de Santana. Estudante do 3º semestre de Terapia Ocupacional, com experiência em contextos clínico e escolar.">
 <meta name="theme-color" content="#2F4438">
 <script src="js/themes.js"></script>
-<meta name="portfolio-revision" content="at-v4">
+<meta name="portfolio-revision" content="at-v6">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Isadora Olimpio | Assistente Terapêutica e Acompanhante Escolar">
 <meta property="og:description" content="Acompanhamento infantil, apoio escolar e experiência clínica em Feira de Santana, BA.">
@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="css/portfolio-at-v2.css">
 <link rel="stylesheet" href="css/themes.css">
 <link rel="stylesheet" href="css/portfolio-at-v4.css">
+<link rel="stylesheet" href="css/portfolio-gallery-v6.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
 </head>
 <body>
@@ -195,42 +196,53 @@
     </div>
     <div class="io-gallery-card reveal">
       <div class="io-gallery-toolbar">
-        <span id="galleryCounter" class="io-gallery-counter" aria-live="polite">1 de 5</span>
+        <span id="galleryCounter" class="io-gallery-counter" aria-live="off">1 de 7</span>
         <div class="io-gallery-controls">
+          <button type="button" id="galleryAutoToggle" class="io-gallery-autoplay" aria-label="Pausar reprodução automática" aria-pressed="true" title="Pausar ou reproduzir o carrossel"><span class="io-gallery-play-icon" aria-hidden="true">❚❚</span><span class="io-gallery-play-label">Pausar</span></button>
           <button type="button" id="galleryPrev" aria-label="Foto anterior" title="Foto anterior">&#8592;</button>
           <button type="button" id="galleryNext" aria-label="Próxima foto" title="Próxima foto">&#8594;</button>
         </div>
       </div>
       <div id="galleryViewport" class="io-gallery-viewport" role="region" aria-roledescription="carrossel" aria-label="Imagens do trabalho de Isadora" tabindex="0">
         <div class="io-gallery-track" id="galleryTrack">
-          <figure class="io-gallery-slide" data-gallery-slide>
-            <div class="io-gallery-media"><img src="assets/galeria/espaco-terapeutico.jpg" alt="Sala com tatames, recursos táteis, brinquedos e mobiliário de apoio." loading="lazy" decoding="async"></div>
-            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 01</span><h3>Espaço e materiais</h3><p>Sala com tatames e recursos lúdicos e sensoriais, preparada para atividades de acompanhamento.</p></figcaption>
-          </figure>
-          <figure class="io-gallery-slide" data-gallery-slide>
-            <div class="io-gallery-media"><img src="assets/galeria/atividade-encaixe.jpg" alt="Mesa redonda com encaixes coloridos e peças espalhadas." loading="lazy" decoding="async"></div>
-            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 02</span><h3>Atividades de encaixe</h3><p>Materiais de encaixe, organização de cores e coordenação usados em atividades lúdicas.</p></figcaption>
-          </figure>
-          <figure class="io-gallery-slide" data-gallery-slide>
-            <div class="io-gallery-media"><img src="assets/galeria/piscina-bolinhas-1.jpg" alt="Isadora sentada em piscina de bolinhas, segurando bolas verde e rosa." loading="lazy" decoding="async"></div>
-            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 03</span><h3>Brincadeiras e interação</h3><p>Registro de Isadora em ambiente lúdico com piscina de bolinhas e materiais coloridos.</p></figcaption>
-          </figure>
-          <figure class="io-gallery-slide" data-gallery-slide>
-            <div class="io-gallery-media"><img src="assets/galeria/piscina-bolinhas-2.jpg" alt="Isadora sorrindo entre bolas coloridas em piscina de bolinhas." loading="lazy" decoding="async"></div>
-            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 04</span><h3>Exploração e movimento</h3><p>Outro momento no espaço lúdico, com uso de bolas e oportunidades de movimento e participação.</p></figcaption>
-          </figure>
-          <figure class="io-gallery-slide" data-gallery-slide>
-            <div class="io-gallery-media"><img src="assets/galeria/acompanhamento-clinico.jpg" alt="Isadora em ambiente clínico, usando jaleco e sentada próxima a brinquedos." loading="lazy" decoding="async"></div>
-            <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 05</span><h3>Contexto profissional</h3><p>Fotografia de Isadora no ambiente de atendimento, ilustrando sua experiência de apoio em clínica.</p></figcaption>
-          </figure>
+<figure class="io-gallery-slide" data-gallery-slide aria-label="Foto 1 de 7">
+  <div class="io-gallery-media"><img src="assets/galeria/01-isadora-apresentacao.jpg" alt="Isadora em pé, de jaleco, no ambiente clínico." loading="eager" decoding="async"></div>
+  <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 01</span><h3>Apresentação profissional</h3><p>Registro profissional da Isadora em ambiente de acompanhamento infantil.</p></figcaption>
+</figure>
+<figure class="io-gallery-slide" data-gallery-slide aria-label="Foto 2 de 7">
+  <div class="io-gallery-media"><img src="assets/galeria/02-atividade-piscina.jpg" alt="Isadora sentada em piscina de bolinhas, segurando bolas verde e rosa." loading="lazy" decoding="async"></div>
+  <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 02</span><h3>Brincadeiras e interação</h3><p>Ambiente lúdico com bolas coloridas, utilizado nas atividades de interação e participação.</p></figcaption>
+</figure>
+<figure class="io-gallery-slide" data-gallery-slide aria-label="Foto 3 de 7">
+  <div class="io-gallery-media"><img src="assets/galeria/03-ambiente-clinico.jpg" alt="Isadora sentada de jaleco, próxima ao espaço de brinquedos." loading="lazy" decoding="async"></div>
+  <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 03</span><h3>Registro em ambiente clínico</h3><p>Fotografia em ambiente clínico, com recursos e brinquedos disponíveis no local.</p></figcaption>
+</figure>
+<figure class="io-gallery-slide" data-gallery-slide aria-label="Foto 4 de 7">
+  <div class="io-gallery-media"><img src="assets/galeria/04-registro-pessoal.jpg" alt="Isadora com roupa de estampa lúdica em sala com piso de EVA azul." loading="lazy" decoding="async"></div>
+  <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 04</span><h3>Registro de acompanhamento</h3><p>Registro de Isadora em ambiente infantil, com espaço de atividades ao fundo.</p></figcaption>
+</figure>
+<figure class="io-gallery-slide" data-gallery-slide aria-label="Foto 5 de 7">
+  <div class="io-gallery-media"><img src="assets/galeria/05-movimento-e-brincadeira.jpg" alt="Isadora sorrindo com as mãos erguidas em piscina de bolinhas coloridas." loading="lazy" decoding="async"></div>
+  <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 05</span><h3>Movimento e brincadeira</h3><p>Atividades lúdicas com bolas e oportunidades de exploração e movimento.</p></figcaption>
+</figure>
+<figure class="io-gallery-slide" data-gallery-slide aria-label="Foto 6 de 7">
+  <div class="io-gallery-media"><img src="assets/galeria/atividade-encaixe.jpg" alt="Mesa com peças e encaixes coloridos." loading="lazy" decoding="async"></div>
+  <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 06</span><h3>Atividades de encaixe</h3><p>Recurso de encaixe e organização de cores usado em atividades lúdicas.</p></figcaption>
+</figure>
+<figure class="io-gallery-slide" data-gallery-slide aria-label="Foto 7 de 7">
+  <div class="io-gallery-media"><img src="assets/galeria/espaco-terapeutico.jpg" alt="Sala com tatames e materiais sensoriais e lúdicos." loading="lazy" decoding="async"></div>
+  <figcaption class="io-gallery-caption"><span class="io-gallery-index">Registro 07</span><h3>Espaço terapêutico</h3><p>Ambiente com tatames, brinquedos e recursos táteis para atividades estruturadas.</p></figcaption>
+</figure>
         </div>
       </div>
       <div class="io-gallery-thumbs" id="galleryThumbs" role="group" aria-label="Escolher uma imagem">
-        <button class="io-gallery-thumb is-active" type="button" data-gallery-thumb="0" aria-label="Mostrar imagem 1: Espaço e materiais" aria-pressed="true"><img src="assets/galeria/espaco-terapeutico.jpg" alt="" loading="lazy"><span>Espaço e materiais</span></button>
-        <button class="io-gallery-thumb" type="button" data-gallery-thumb="1" aria-label="Mostrar imagem 2: Atividades de encaixe" aria-pressed="false"><img src="assets/galeria/atividade-encaixe.jpg" alt="" loading="lazy"><span>Atividades de encaixe</span></button>
-        <button class="io-gallery-thumb" type="button" data-gallery-thumb="2" aria-label="Mostrar imagem 3: Brincadeiras e interação" aria-pressed="false"><img src="assets/galeria/piscina-bolinhas-1.jpg" alt="" loading="lazy"><span>Brincadeiras e interação</span></button>
-        <button class="io-gallery-thumb" type="button" data-gallery-thumb="3" aria-label="Mostrar imagem 4: Exploração e movimento" aria-pressed="false"><img src="assets/galeria/piscina-bolinhas-2.jpg" alt="" loading="lazy"><span>Exploração e movimento</span></button>
-        <button class="io-gallery-thumb" type="button" data-gallery-thumb="4" aria-label="Mostrar imagem 5: Contexto profissional" aria-pressed="false"><img src="assets/galeria/acompanhamento-clinico.jpg" alt="" loading="lazy"><span>Contexto profissional</span></button>
+        <button class="io-gallery-thumb is-active" type="button" data-gallery-thumb="0" aria-label="Mostrar imagem 1: Apresentação profissional" aria-pressed="true"><img src="assets/galeria/01-isadora-apresentacao.jpg" alt="" loading="lazy"><span>Apresentação profissional</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="1" aria-label="Mostrar imagem 2: Brincadeiras e interação" aria-pressed="false"><img src="assets/galeria/02-atividade-piscina.jpg" alt="" loading="lazy"><span>Brincadeiras e interação</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="2" aria-label="Mostrar imagem 3: Registro em ambiente clínico" aria-pressed="false"><img src="assets/galeria/03-ambiente-clinico.jpg" alt="" loading="lazy"><span>Registro em ambiente clínico</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="3" aria-label="Mostrar imagem 4: Registro de acompanhamento" aria-pressed="false"><img src="assets/galeria/04-registro-pessoal.jpg" alt="" loading="lazy"><span>Registro de acompanhamento</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="4" aria-label="Mostrar imagem 5: Movimento e brincadeira" aria-pressed="false"><img src="assets/galeria/05-movimento-e-brincadeira.jpg" alt="" loading="lazy"><span>Movimento e brincadeira</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="5" aria-label="Mostrar imagem 6: Atividades de encaixe" aria-pressed="false"><img src="assets/galeria/atividade-encaixe.jpg" alt="" loading="lazy"><span>Atividades de encaixe</span></button>
+        <button class="io-gallery-thumb" type="button" data-gallery-thumb="6" aria-label="Mostrar imagem 7: Espaço terapêutico" aria-pressed="false"><img src="assets/galeria/espaco-terapeutico.jpg" alt="" loading="lazy"><span>Espaço terapêutico</span></button>
       </div>
     </div>
   </div>
