@@ -26,3 +26,16 @@
 @media (max-width:860px){.io-gallery-slide{grid-template-columns:1fr;gap:0;}.io-gallery-media{height:310px;}.io-gallery-caption{padding:19px 12px;min-height:145px;}.io-gallery-thumbs{display:flex;overflow-x:auto;scroll-snap-type:x proximity;gap:10px;padding:4px 3px 10px;}.io-gallery-thumb{flex:0 0 116px;scroll-snap-align:start;}.io-gallery-thumb img{height:64px;}}
 @media (max-width:480px){.io-gallery-card{padding:12px;border-radius:18px;}.io-gallery-media{height:290px;}.io-gallery-caption{padding:16px 6px;min-height:150px;}.io-gallery-slide{gap:0;}.io-gallery-controls button{width:40px;height:40px;}}
 @media (prefers-reduced-motion:reduce){.io-gallery-viewport{scroll-behavior:auto;}}
+
+/* V5 — fotografia principal: imagem em alta definição, enquadramento sem faixas pretas. */
+.photo-frame {
+  overflow: hidden;
+  background: var(--paper);
+}
+.photo-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
