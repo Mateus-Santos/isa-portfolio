@@ -1,0 +1,89 @@
+/* Portfólio Isadora | AT V2 | sobrescritas pontuais do tema original */
+:root{ --header-h:76px; }
+html{scroll-padding-top:calc(var(--header-h) + 18px);}
+body{overflow-x:clip;}
+.section[id], .hero[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
+.site-header.is-scrolled{box-shadow:0 8px 24px -18px rgba(47,68,56,.5);}
+.nav-links{gap:clamp(12px, 1.8vw, 26px);}
+.nav-links a{white-space:nowrap;}
+.nav-toggle{flex-shrink:0; align-items:center; padding:8px;}
+.nav-toggle span{display:block;width:100%; flex:0 0 2px;}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.section-intro{color:var(--ink-soft);margin-top:16px;max-width:74ch;line-height:1.7;}
+.role-note{background:var(--paper);border-left:3px solid var(--sage);padding:13px 18px;border-radius:0 10px 10px 0;font-size:.94rem!important;}
+.history-context{color:var(--ink-soft);margin:0 0 26px;max-width:75ch;}
+.formacao-disclaimer{font-size:.84rem!important;opacity:.95;}
+.path-card p{line-height:1.65;}
+.path-year{font-family:var(--f-body);font-size:.85rem;font-weight:700;letter-spacing:.01em;}
+.extra-courses{margin-top:28px;padding:18px 22px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-sm);}
+.extra-courses summary{cursor:pointer;font-weight:600;color:var(--forest);line-height:1.55;}
+.extra-courses-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px;padding-top:18px;color:var(--ink-soft);font-size:.91rem;}
+.extra-courses-grid strong{color:var(--forest);}
+.contato-copy .contato-location{margin-top:14px;margin-bottom:20px;font-size:.9rem;}
+.btn-light{background:var(--paper);color:var(--forest);border:1px solid var(--paper);font-size:.9rem;padding:11px 18px;margin-top:12px;}
+.btn-light:hover{background:var(--sage-light);transform:translateY(-2px);}
+.contato-copy .btn-light{display:inline-flex;}
+.contato-links a{min-width:0;}
+.contato-links small{overflow-wrap:anywhere;}
+.tab-btn{font-family:var(--f-body);}
+.tab-panel[hidden]{display:none!important;}
+/* A página deve funcionar mesmo se JavaScript/IntersectionObserver não carregar. */
+.reveal{opacity:1;transform:none;}
+.js-enhanced .reveal:not(.is-visible){opacity:0;transform:translateY(16px);}
+.js-enhanced .reveal.is-visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){
+  .js-enhanced .reveal:not(.is-visible){opacity:1;transform:none;}
+}
+
+/* A navegação em desktop deixa de caber antes dos antigos 760px.
+   O painel móvel é ancorado abaixo do header (absolute), evitando o bug
+   de position:fixed dentro de um ancestral com backdrop-filter. */
+@media (max-width:1080px){
+  .site-header{position:sticky;isolation:isolate;}
+  .nav-toggle{display:flex;}
+  .nav-links{
+    position:absolute;
+    inset:auto 0 auto 0;
+    top:calc(100% - 1px);
+    z-index:1002;
+    width:100%;height:auto;max-height:calc(100vh - var(--header-h));
+    max-height:calc(100dvh - var(--header-h));
+    display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;
+    gap:2px;padding:18px clamp(20px,5vw,44px) 24px;
+    background:var(--paper);border-top:1px solid var(--line);
+    box-shadow:0 20px 38px -25px rgba(47,68,56,.35);
+    overflow-y:auto;overscroll-behavior:contain;
+    opacity:0;visibility:hidden;pointer-events:none;
+    transform:translateY(-10px);
+    transition:opacity .22s ease, transform .22s ease, visibility .22s ease;
+  }
+  .nav-links.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);}
+  .nav-links li{width:100%;}
+  .nav-links a{display:block;padding:12px 14px;font-size:1rem;white-space:normal;border-radius:10px;}
+  .nav-links a:hover,.nav-links a.is-active{background:var(--cream);}
+  .nav-links a::after{display:none;}
+  .nav-links .nav-cta{display:block;padding:12px 18px!important;text-align:center;margin-top:7px;}
+  body.nav-open{overflow:hidden;}
+}
+@media (max-width:760px){
+  .hero{padding-top:52px;}
+  .hero-stats{gap:16px;}
+  .hero-stats li{min-width:115px;flex:1 1 115px;}
+  .hero-stats span{max-width:100%;}
+  .tabs{gap:8px;}
+  .tab-btn{padding:10px 14px;}
+  .extra-courses-grid{grid-template-columns:1fr;}
+  .contato-card{padding:34px 24px;}
+}
+@media (max-width:440px){
+  .hero{padding-top:40px;}
+  .hero-actions .btn{justify-content:center;width:100%;}
+  .hero h1{font-size:clamp(1.92rem, 8vw, 2.35rem);}
+  .hero-stats li{min-width:100%;}
+  .path-timeline{padding-left:40px;}
+  .path-dot{left:-40px;}
+  .path-card{padding:20px 18px;}
+  .contato-card{padding:30px 20px;}
+  .formacao-card{padding:28px 20px;}
+}
