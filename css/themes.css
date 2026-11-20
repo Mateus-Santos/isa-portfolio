@@ -1,23 +1,24 @@
 /* Isadora Portfolio AT V4: verde original como principal, escuro e serenity secundarios. */
 /* Verde original agora e o padrao visual. */
 :root, :root[data-theme="original"] {
-  --forest: #2F4438;
-  --forest-2: #3E5C4A;
-  --sage: #8FAE87;
-  --sage-light: #D7E4CD;
-  --coral: #E2946F;
-  --coral-dark: #C97650;
-  --cream: #F6F1E6;
-  --cream-2: #EDE6D4;
-  --paper: #FBF8F1;
-  --ink: #2B2620;
-  --ink-soft: #5B5548;
-  --line: rgba(43,38,32,.12);
-  --shadow: 0 20px 40px -20px rgba(47,68,56,.35);
-  --header-bg: rgba(246,241,230,.96);
-  --panel-bg: #2F4438;
-  --panel-muted: #D7E4CD;
-  --option-hover: #EDE6D4;
+  --forest: #026632;
+  --gold: #D2A001;
+  --forest-2: #07572F;
+  --sage: #7DAE8D;
+  --sage-light: #DFEEDF;
+  --coral: #D76C02;
+  --coral-dark: #9C4900;
+  --cream: #F6F9F3;
+  --cream-2: #E9F1E7;
+  --paper: #FFFEFA;
+  --ink: #1B2B22;
+  --ink-soft: #4D6151;
+  --line: rgba(2,102,50,.14);
+  --shadow: 0 20px 40px -20px rgba(2,102,50,.24);
+  --header-bg: rgba(246,249,243,.96);
+  --panel-bg: #026632;
+  --panel-muted: #DFEEDF;
+  --option-hover: #E9F1E7;
   color-scheme: light;
 }
 

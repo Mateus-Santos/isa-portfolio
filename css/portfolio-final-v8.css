@@ -1,0 +1,33 @@
+/* V8: anula o deslocamento duplo das âncoras da V2. */
+html { scroll-padding-top: 0; }
+.section[id], .hero[id] { scroll-margin-top: calc(var(--header-h) + 12px); }
+
+/* O símbolo representa a área de formação, sem sugerir titulação profissional. */
+.formacao-icon.formacao-icon--to {
+  width: 92px; height: 92px; flex: 0 0 92px;
+  display: grid; place-items: center; overflow: hidden;
+  padding: 5px; border-radius: 50%; background: #fff;
+  box-shadow: 0 8px 24px -14px rgb(0 0 0 / .22);
+}
+.formacao-icon--to img { display:block; width:100%; height:100%; object-fit:contain; }
+@media (max-width:600px) { .formacao-icon.formacao-icon--to { width:80px; height:80px; flex-basis:80px; } }
+
+/* Destaques alinhados ao brasão enviado: verde, dourado, laranja. */
+:root[data-theme="original"] .btn-primary,
+:root:not([data-theme]) .btn-primary {
+  color:#101D14; background:#D76C02;
+  box-shadow:0 10px 26px -14px rgba(170,80,0,.55);
+}
+:root[data-theme="original"] .btn-primary:hover,
+:root:not([data-theme]) .btn-primary:hover { background:#9C4900; color:#fff; }
+:root[data-theme="original"] .theme-swatch--original,
+:root:not([data-theme]) .theme-swatch--original {
+  background:linear-gradient(135deg,#026632 0 55%,#D2A001 55% 78%,#D76C02 78% 100%);
+}
+:root[data-theme="original"] .hero h1 em,
+:root:not([data-theme]) .hero h1 em { color:#9C4900; }
+:root[data-theme="original"] .trail-fill,
+:root:not([data-theme]) .trail-fill { background:linear-gradient(90deg,#026632,#D2A001,#D76C02); }
+:root[data-theme="original"] .contato-copy .eyebrow--light,
+:root:not([data-theme]) .contato-copy .eyebrow--light { color:#F1E9BE; }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
